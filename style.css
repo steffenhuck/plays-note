@@ -1,0 +1,144 @@
+:root {
+  --background: #edf3ed;
+  --text: #222222;
+  --meta: #666666;
+  --accent: #6e1e2e;
+  --signature: #9a9a9a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: "Source Serif 4", Georgia, serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: 640px;
+  margin: 92px auto 80px auto;
+  padding: 0 22px;
+}
+
+.back-link {
+  margin: 0 0 2.6rem 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.back-link a {
+  color: var(--meta);
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.back-link a:hover,
+.back-link a:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.08em;
+}
+
+h1 {
+  margin: 0 0 3rem 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.15;
+  color: var(--text);
+}
+
+.note-text {
+  margin: 0 0 3.2rem 0;
+}
+
+.note-text p {
+  margin: 0 0 1.3rem 0;
+  font-size: 1.06rem;
+}
+
+.note-text p:last-child {
+  margin-bottom: 0;
+}
+
+.audio-link {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.audio-link a {
+  color: var(--accent);
+  text-decoration: none;
+  opacity: 0.72;
+}
+
+.audio-link a:hover,
+.audio-link a:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.08em;
+}
+
+.signature {
+  margin: 5rem 0 0 0;
+  text-align: center;
+  font-size: 0.92rem;
+  letter-spacing: 0.12em;
+}
+
+.signature a {
+  color: var(--signature);
+  text-decoration: none;
+}
+
+.signature a:hover,
+.signature a:focus {
+  color: var(--signature);
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 100%;
+    margin: 68px auto 56px auto;
+    padding: 0 20px;
+  }
+
+  .back-link {
+    margin: 0 0 2.2rem 0;
+    font-size: 0.74rem;
+  }
+
+  h1 {
+    margin: 0 0 2.4rem 0;
+    font-size: 1.82rem;
+    letter-spacing: 0.08em;
+  }
+
+  .note-text p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .audio-link {
+    font-size: 0.78rem;
+  }
+
+  .signature {
+    margin-top: 4.2rem;
+    font-size: 0.86rem;
+    letter-spacing: 0.1em;
+  }
+}
