@@ -1,8 +1,7 @@
 :root {
   --background: #edf3ed;
-  --text: #3a3a3a;          /* slightly muted */
+  --text: #3a3a3a;
   --meta: #6f6f6f;
-  --accent: #6e1e2e;
   --signature: #9a9a9a;
 }
 
@@ -31,7 +30,7 @@ body {
 }
 
 h1 {
-  margin: 0 0 3rem 0;
+  margin: 0 0 2.4rem 0;   /* slightly tighter below title */
   font-size: 2.1rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -39,18 +38,23 @@ h1 {
   color: var(--text);
 }
 
+/* --- NOTE TEXT --- */
+
 .note-text {
-  margin: 0 0 3.2rem 0;
+  margin: 0 0 2.8rem 0;
+  margin-left: 2.4em;   /* main structural move */
 }
 
 .note-text p {
-  margin: 0 0 1.3rem 0;
+  margin: 0 0 0.9rem 0;   /* tighter vertical rhythm */
   font-size: 1.05rem;
 }
 
 .note-text p:last-child {
   margin-bottom: 0;
 }
+
+/* --- AUDIO LINK --- */
 
 .audio-link {
   margin: 0;
@@ -59,20 +63,22 @@ h1 {
 }
 
 .audio-link a {
-  color: var(--accent);
+  color: var(--meta);      /* monochrome */
   text-decoration: none;
-  opacity: 0.6;           /* more muted */
+  opacity: 0.75;
 }
 
 .audio-link a:hover,
 .audio-link a:focus {
   text-decoration: underline;
   text-underline-offset: 0.08em;
-  opacity: 0.8;
+  opacity: 0.95;
 }
 
+/* --- SIGNATURE --- */
+
 .signature {
-  margin: 5rem 0 0 0;
+  margin: 3.8rem 0 0 0;   /* slightly tighter */
   text-align: center;
   font-size: 0.9rem;
   letter-spacing: 0.1em;
@@ -89,7 +95,8 @@ h1 {
   text-decoration: none;
 }
 
-/* Mobile */
+/* --- MOBILE --- */
+
 @media (max-width: 640px) {
   .container {
     max-width: 100%;
@@ -98,14 +105,18 @@ h1 {
   }
 
   h1 {
-    margin: 0 0 2.4rem 0;
+    margin: 0 0 2rem 0;
     font-size: 1.75rem;
     letter-spacing: 0.07em;
   }
 
+  .note-text {
+    margin-left: 1.6em;   /* slightly reduced indent on mobile */
+  }
+
   .note-text p {
     font-size: 1rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
   }
 
   .audio-link {
@@ -113,8 +124,7 @@ h1 {
   }
 
   .signature {
-    margin-top: 4.2rem;
+    margin-top: 3.2rem;
     font-size: 0.86rem;
-    letter-spacing: 0.1em;
   }
 }
