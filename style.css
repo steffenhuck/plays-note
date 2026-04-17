@@ -1,7 +1,7 @@
 :root {
   --background: #edf3ed;
-  --text: #222222;
-  --meta: #666666;
+  --text: #3a3a3a;          /* slightly muted */
+  --meta: #6f6f6f;
   --accent: #6e1e2e;
   --signature: #9a9a9a;
 }
@@ -18,7 +18,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--text);
-  font-family: "Source Serif 4", Georgia, serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -30,31 +30,11 @@ body {
   padding: 0 22px;
 }
 
-.back-link {
-  margin: 0 0 2.6rem 0;
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-
-.back-link a {
-  color: var(--meta);
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.back-link a:hover,
-.back-link a:focus {
-  text-decoration: underline;
-  text-underline-offset: 0.08em;
-}
-
 h1 {
   margin: 0 0 3rem 0;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   line-height: 1.15;
   color: var(--text);
 }
@@ -65,7 +45,7 @@ h1 {
 
 .note-text p {
   margin: 0 0 1.3rem 0;
-  font-size: 1.06rem;
+  font-size: 1.05rem;
 }
 
 .note-text p:last-child {
@@ -74,28 +54,28 @@ h1 {
 
 .audio-link {
   margin: 0;
-  font-size: 0.82rem;
-  letter-spacing: 0.02em;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.01em;
 }
 
 .audio-link a {
   color: var(--accent);
   text-decoration: none;
-  opacity: 0.72;
+  opacity: 0.6;           /* more muted */
 }
 
 .audio-link a:hover,
 .audio-link a:focus {
   text-decoration: underline;
   text-underline-offset: 0.08em;
+  opacity: 0.8;
 }
 
 .signature {
   margin: 5rem 0 0 0;
   text-align: center;
-  font-size: 0.92rem;
-  letter-spacing: 0.12em;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
 }
 
 .signature a {
@@ -109,6 +89,7 @@ h1 {
   text-decoration: none;
 }
 
+/* Mobile */
 @media (max-width: 640px) {
   .container {
     max-width: 100%;
@@ -116,15 +97,10 @@ h1 {
     padding: 0 20px;
   }
 
-  .back-link {
-    margin: 0 0 2.2rem 0;
-    font-size: 0.74rem;
-  }
-
   h1 {
     margin: 0 0 2.4rem 0;
-    font-size: 1.82rem;
-    letter-spacing: 0.08em;
+    font-size: 1.75rem;
+    letter-spacing: 0.07em;
   }
 
   .note-text p {
@@ -133,7 +109,7 @@ h1 {
   }
 
   .audio-link {
-    font-size: 0.78rem;
+    font-size: 0.76rem;
   }
 
   .signature {
