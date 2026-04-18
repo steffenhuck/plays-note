@@ -73,6 +73,17 @@ h1 {
   opacity: 1;
 }
 
+.stealth-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.stealth-link:hover,
+.stealth-link:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.08em;
+}
+
 /* --- SIGNATURE --- */
 
 .signature {
